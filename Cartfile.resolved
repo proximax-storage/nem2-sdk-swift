@@ -1,0 +1,4 @@
+github "Alamofire/Alamofire" "4.7.3"
+github "ReactiveX/RxSwift" "4.3.1"
+github "daltoniam/Starscream" "3.0.5"
+github "krzyzanowskim/CryptoSwift" "0.12.0"

@@ -1,0 +1,33 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/taizo/work/nem2-sdk-swift/Nem2SdkSwift/sdk/infrastructure/ListenerSubscribeMessage.swift",
+      "line": 8,
+      "symbol": "ListenerSubscribeMessage",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/taizo/work/nem2-sdk-swift/Nem2SdkSwift/sdk/model/account/MultisigAccountGraphInfo.swift",
+      "line": 25,
+      "symbol": "MultisigAccountGraphInfo.init(multisigAccounts:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/taizo/work/nem2-sdk-swift/Nem2SdkSwift/sdk/model/mosaic/MosaicSupplyType.swift",
+      "line": 9,
+      "symbol": "MosaicSupplyType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/taizo/work/nem2-sdk-swift/Nem2SdkSwift/sdk/model/transaction/MultisigCosignatoryModification.swift",
+      "line": 18,
+      "symbol": "MultisigCosignatoryModification.init(type:cosignatory:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/taizo/work/nem2-sdk-swift"
+}

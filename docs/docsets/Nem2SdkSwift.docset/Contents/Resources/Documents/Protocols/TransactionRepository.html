@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TransactionRepository Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/TransactionRepository" class="dashAnchor"></a>
+    <a title="TransactionRepository Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Nem2SdkSwift Docs</a> (99% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Nem2SdkSwift Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        TransactionRepository Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Account.html">Account</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AccountHttp.html">AccountHttp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AggregateTransaction.html">AggregateTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BlockchainHttp.html">BlockchainHttp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CosignatureTransaction.html">CosignatureTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Deadline.html">Deadline</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Hashes.html">Hashes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HexEncoder.html">HexEncoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KeyPair.html">KeyPair</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Listener.html">Listener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LockFundsTransaction.html">LockFundsTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Message.html">Message</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ModifyMultisigAccountTransaction.html">ModifyMultisigAccountTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MosaicDefinitionTransaction.html">MosaicDefinitionTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MosaicHttp.html">MosaicHttp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MosaicSupplyChangeTransaction.html">MosaicSupplyChangeTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NamespaceHttp.html">NamespaceHttp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NetworkHttp.html">NetworkHttp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PlainMessage.html">PlainMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RegisterNamespaceTransaction.html">RegisterNamespaceTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecretLockTransaction.html">SecretLockTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecretProofTransaction.html">SecretProofTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Transaction.html">Transaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionHttp.html">TransactionHttp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransferTransaction.html">TransferTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/XEM.html">XEM</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/HashType.html">HashType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MosaicSupplyType.html">MosaicSupplyType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MultisigCosignatoryModificationType.html">MultisigCosignatoryModificationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NamespaceType.html">NamespaceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Nem2SdkSwiftError.html">Nem2SdkSwiftError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NetworkType.html">NetworkType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransactionType.html">TransactionType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AccountRepository.html">AccountRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BlockchainRepository.html">BlockchainRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MosaicRepository.html">MosaicRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NamespaceRepository.html">NamespaceRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NetworkRepository.html">NetworkRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TransactionRepository.html">TransactionRepository</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AccountInfo.html">AccountInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Address.html">Address</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AggregateTransactionCosignature.html">AggregateTransactionCosignature</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BlockInfo.html">BlockInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BlockchainScore.html">BlockchainScore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BlockchainStorageInfo.html">BlockchainStorageInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CosignatureSignedTransaction.html">CosignatureSignedTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:12Nem2SdkSwift24ListenerSubscribeMessageV">ListenerSubscribeMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Mosaic.html">Mosaic</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MosaicId.html">MosaicId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MosaicInfo.html">MosaicInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MosaicName.html">MosaicName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MosaicProperties.html">MosaicProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MultisigAccountGraphInfo.html">MultisigAccountGraphInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MultisigAccountInfo.html">MultisigAccountInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MultisigCosignatoryModification.html">MultisigCosignatoryModification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NamespaceId.html">NamespaceId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NamespaceInfo.html">NamespaceInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NamespaceName.html">NamespaceName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PrivateKey.html">PrivateKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PublicAccount.html">PublicAccount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PublicKey.html">PublicKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SignedTransaction.html">SignedTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransactionAnnounceResponse.html">TransactionAnnounceResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransactionInfo.html">TransactionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransactionStatus.html">TransactionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransactionStatusError.html">TransactionStatusError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TransactionRepository</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">TransactionRepository</span></code></pre>
+
+                </div>
+              </div>
+            <p>Transaction interface repository.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift21TransactionRepositoryP03getD04hash02RxC017PrimitiveSequenceVyAF11SingleTraitOAA0D0CGSays5UInt8VG_tF"></a>
+                    <a name="//apple_ref/swift/Method/getTransaction(hash:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift21TransactionRepositoryP03getD04hash02RxC017PrimitiveSequenceVyAF11SingleTraitOAA0D0CGSays5UInt8VG_tF">getTransaction(hash:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets a transaction for a given hash.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getTransaction</span><span class="p">(</span><span class="nv">hash</span><span class="p">:</span> <span class="p">[</span><span class="kt">UInt8</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Single</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/Transaction.html">Transaction</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hash</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Transaction hash.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Observable of Transaction</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift21TransactionRepositoryP15getTransactions6hashes02RxC017PrimitiveSequenceVyAF11SingleTraitOSayAA0D0CGGSaySays5UInt8VGG_tF"></a>
+                    <a name="//apple_ref/swift/Method/getTransactions(hashes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift21TransactionRepositoryP15getTransactions6hashes02RxC017PrimitiveSequenceVyAF11SingleTraitOSayAA0D0CGGSaySays5UInt8VGG_tF">getTransactions(hashes:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets an list of transactions for different transaction hashes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getTransactions</span><span class="p">(</span><span class="nv">hashes</span><span class="p">:</span> <span class="p">[[</span><span class="kt">UInt8</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="kt">Single</span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Classes/Transaction.html">Transaction</a></span><span class="p">]</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hashes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>List of transaction hash string.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Observable of [Transaction]</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift21TransactionRepositoryP03getD6Status4hash02RxC017PrimitiveSequenceVyAF11SingleTraitOAA0dG0VGSays5UInt8VG_tF"></a>
+                    <a name="//apple_ref/swift/Method/getTransactionStatus(hash:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift21TransactionRepositoryP03getD6Status4hash02RxC017PrimitiveSequenceVyAF11SingleTraitOAA0dG0VGSays5UInt8VG_tF">getTransactionStatus(hash:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets a transaction status for a transaction hash.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getTransactionStatus</span><span class="p">(</span><span class="nv">hash</span><span class="p">:</span> <span class="p">[</span><span class="kt">UInt8</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Single</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/TransactionStatus.html">TransactionStatus</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hash</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Transaction hash string</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Observable of TransactionStatus</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift21TransactionRepositoryP03getD8Statuses6hashes02RxC017PrimitiveSequenceVyAF11SingleTraitOSayAA0D6StatusVGGSaySays5UInt8VGG_tF"></a>
+                    <a name="//apple_ref/swift/Method/getTransactionStatuses(hashes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift21TransactionRepositoryP03getD8Statuses6hashes02RxC017PrimitiveSequenceVyAF11SingleTraitOSayAA0D6StatusVGGSaySays5UInt8VGG_tF">getTransactionStatuses(hashes:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets an list of transaction status for different transaction hashes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getTransactionStatuses</span><span class="p">(</span><span class="nv">hashes</span><span class="p">:</span> <span class="p">[[</span><span class="kt">UInt8</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="kt">Single</span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/TransactionStatus.html">TransactionStatus</a></span><span class="p">]</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hashes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>List of transaction hash string</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Observable of [TransactionStatus]</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift21TransactionRepositoryP8announce06signedD002RxC017PrimitiveSequenceVyAF11SingleTraitOAA0D16AnnounceResponseVGAA06SignedD0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/announce(signedTransaction:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift21TransactionRepositoryP8announce06signedD002RxC017PrimitiveSequenceVyAF11SingleTraitOAA0D16AnnounceResponseVGAA06SignedD0V_tF">announce(signedTransaction:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Send a signed transaction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">announce</span><span class="p">(</span><span class="nv">signedTransaction</span><span class="p">:</span> <span class="kt"><a href="../Structs/SignedTransaction.html">SignedTransaction</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Single</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/TransactionAnnounceResponse.html">TransactionAnnounceResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>signedTransaction</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>SignedTransaction</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Observable of TransactionAnnounceResponse</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift21TransactionRepositoryP23announceAggregateBonded06signedD002RxC017PrimitiveSequenceVyAF11SingleTraitOAA0D16AnnounceResponseVGAA06SignedD0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/announceAggregateBonded(signedTransaction:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift21TransactionRepositoryP23announceAggregateBonded06signedD002RxC017PrimitiveSequenceVyAF11SingleTraitOAA0D16AnnounceResponseVGAA06SignedD0V_tF">announceAggregateBonded(signedTransaction:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Send a signed transaction with missing signatures.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">announceAggregateBonded</span><span class="p">(</span><span class="nv">signedTransaction</span><span class="p">:</span> <span class="kt"><a href="../Structs/SignedTransaction.html">SignedTransaction</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Single</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/TransactionAnnounceResponse.html">TransactionAnnounceResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>signedTransaction</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>SignedTransaction</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Observable of TransactionAnnounceResponse</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift21TransactionRepositoryP34announceAggregateBondedCosignature017cosignatureSignedD002RxC017PrimitiveSequenceVyAF11SingleTraitOAA0D16AnnounceResponseVGAA0ikD0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/announceAggregateBondedCosignature(cosignatureSignedTransaction:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift21TransactionRepositoryP34announceAggregateBondedCosignature017cosignatureSignedD002RxC017PrimitiveSequenceVyAF11SingleTraitOAA0D16AnnounceResponseVGAA0ikD0V_tF">announceAggregateBondedCosignature(cosignatureSignedTransaction:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Send a cosignature signed transaction of an already announced transaction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">announceAggregateBondedCosignature</span><span class="p">(</span><span class="nv">cosignatureSignedTransaction</span><span class="p">:</span> <span class="kt"><a href="../Structs/CosignatureSignedTransaction.html">CosignatureSignedTransaction</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Single</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/TransactionAnnounceResponse.html">TransactionAnnounceResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cosignatureSignedTransaction</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>CosignatureSignedTransaction</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Observable of TransactionAnnounceResponse</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">ProximaX Limited</a>. All rights reserved. (Last updated: 2018-10-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

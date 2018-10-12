@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BlockInfo Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/BlockInfo" class="dashAnchor"></a>
+    <a title="BlockInfo Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Nem2SdkSwift Docs</a> (99% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Nem2SdkSwift Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        BlockInfo Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Account.html">Account</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AccountHttp.html">AccountHttp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AggregateTransaction.html">AggregateTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BlockchainHttp.html">BlockchainHttp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CosignatureTransaction.html">CosignatureTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Deadline.html">Deadline</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Hashes.html">Hashes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HexEncoder.html">HexEncoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KeyPair.html">KeyPair</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Listener.html">Listener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LockFundsTransaction.html">LockFundsTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Message.html">Message</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ModifyMultisigAccountTransaction.html">ModifyMultisigAccountTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MosaicDefinitionTransaction.html">MosaicDefinitionTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MosaicHttp.html">MosaicHttp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MosaicSupplyChangeTransaction.html">MosaicSupplyChangeTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NamespaceHttp.html">NamespaceHttp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NetworkHttp.html">NetworkHttp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PlainMessage.html">PlainMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RegisterNamespaceTransaction.html">RegisterNamespaceTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecretLockTransaction.html">SecretLockTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecretProofTransaction.html">SecretProofTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Transaction.html">Transaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionHttp.html">TransactionHttp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransferTransaction.html">TransferTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/XEM.html">XEM</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/HashType.html">HashType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MosaicSupplyType.html">MosaicSupplyType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MultisigCosignatoryModificationType.html">MultisigCosignatoryModificationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NamespaceType.html">NamespaceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Nem2SdkSwiftError.html">Nem2SdkSwiftError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NetworkType.html">NetworkType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransactionType.html">TransactionType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AccountRepository.html">AccountRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BlockchainRepository.html">BlockchainRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MosaicRepository.html">MosaicRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NamespaceRepository.html">NamespaceRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NetworkRepository.html">NetworkRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TransactionRepository.html">TransactionRepository</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AccountInfo.html">AccountInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Address.html">Address</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AggregateTransactionCosignature.html">AggregateTransactionCosignature</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BlockInfo.html">BlockInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BlockchainScore.html">BlockchainScore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BlockchainStorageInfo.html">BlockchainStorageInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CosignatureSignedTransaction.html">CosignatureSignedTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:12Nem2SdkSwift24ListenerSubscribeMessageV">ListenerSubscribeMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Mosaic.html">Mosaic</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MosaicId.html">MosaicId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MosaicInfo.html">MosaicInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MosaicName.html">MosaicName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MosaicProperties.html">MosaicProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MultisigAccountGraphInfo.html">MultisigAccountGraphInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MultisigAccountInfo.html">MultisigAccountInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MultisigCosignatoryModification.html">MultisigCosignatoryModification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NamespaceId.html">NamespaceId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NamespaceInfo.html">NamespaceInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NamespaceName.html">NamespaceName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PrivateKey.html">PrivateKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PublicAccount.html">PublicAccount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PublicKey.html">PublicKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SignedTransaction.html">SignedTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransactionAnnounceResponse.html">TransactionAnnounceResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransactionInfo.html">TransactionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransactionStatus.html">TransactionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransactionStatusError.html">TransactionStatusError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BlockInfo</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">BlockInfo</span> <span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                </div>
+              </div>
+            <p>The block info structure describes basic information of a block.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <a href="#/Properties">
+                  <h3 class="section-name">Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift9BlockInfoV4hashSSvp"></a>
+                    <a name="//apple_ref/swift/Property/hash" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift9BlockInfoV4hashSSvp">hash</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Block hash.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">hash</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift9BlockInfoV14generationHashSSvp"></a>
+                    <a name="//apple_ref/swift/Property/generationHash" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift9BlockInfoV14generationHashSSvp">generationHash</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Block generation hash.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">generationHash</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift9BlockInfoV8totalFees6UInt64VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/totalFee" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift9BlockInfoV8totalFees6UInt64VSgvp">totalFee</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Total fee paid to the account harvesting the block. Nil when generated by listeners.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">totalFee</span><span class="p">:</span> <span class="kt">UInt64</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift9BlockInfoV15numTransactionsSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/numTransactions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift9BlockInfoV15numTransactionsSiSgvp">numTransactions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Number of transactions included the block. Nil when generated by listeners.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">numTransactions</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift9BlockInfoV9signatureSSvp"></a>
+                    <a name="//apple_ref/swift/Property/signature" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift9BlockInfoV9signatureSSvp">signature</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The block signature.
+The signature was generated by the signer and can be used to validate that the blockchain data was not modified by a node.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift9BlockInfoV6signerAA13PublicAccountVvp"></a>
+                    <a name="//apple_ref/swift/Property/signer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift9BlockInfoV6signerAA13PublicAccountVvp">signer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Public account of block harvester.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">signer</span><span class="p">:</span> <span class="kt"><a href="../Structs/PublicAccount.html">PublicAccount</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift9BlockInfoV11networkTypeAA07NetworkG0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/networkType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift9BlockInfoV11networkTypeAA07NetworkG0Ovp">networkType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Network type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">networkType</span><span class="p">:</span> <span class="kt"><a href="../Enums/NetworkType.html">NetworkType</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift9BlockInfoV7versionSivp"></a>
+                    <a name="//apple_ref/swift/Property/version" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift9BlockInfoV7versionSivp">version</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Block transaction version.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift9BlockInfoV4typeSivp"></a>
+                    <a name="//apple_ref/swift/Property/type" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift9BlockInfoV4typeSivp">type</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Block transaction type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift9BlockInfoV6heights6UInt64Vvp"></a>
+                    <a name="//apple_ref/swift/Property/height" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift9BlockInfoV6heights6UInt64Vvp">height</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Height of which the block was confirmed. Each block has a unique height. Subsequent blocks differ in height by 1.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">UInt64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift9BlockInfoV9timestamps6UInt64Vvp"></a>
+                    <a name="//apple_ref/swift/Property/timestamp" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift9BlockInfoV9timestamps6UInt64Vvp">timestamp</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The number of seconds elapsed since the creation of the nemesis blockchain.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">timestamp</span><span class="p">:</span> <span class="kt">UInt64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift9BlockInfoV10difficultys6UInt64Vvp"></a>
+                    <a name="//apple_ref/swift/Property/difficulty" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift9BlockInfoV10difficultys6UInt64Vvp">difficulty</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>POI difficulty to harvest a block.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">difficulty</span><span class="p">:</span> <span class="kt">UInt64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift9BlockInfoV08previousD4HashSSvp"></a>
+                    <a name="//apple_ref/swift/Property/previousBlockHash" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift9BlockInfoV08previousD4HashSSvp">previousBlockHash</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The last block hash.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">previousBlockHash</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift9BlockInfoV20blockTransactionHashSSvp"></a>
+                    <a name="//apple_ref/swift/Property/blockTransactionHash" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift9BlockInfoV20blockTransactionHashSSvp">blockTransactionHash</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The block transaction hash.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">blockTransactionHash</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s23CustomStringConvertibleP11descriptionSSvp"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s23CustomStringConvertibleP11descriptionSSvp">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">ProximaX Limited</a>. All rights reserved. (Last updated: 2018-10-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

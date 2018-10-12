@@ -1,0 +1,6 @@
+[submodule "Nem2SdkSwift/core/crypto/RHash"]
+	path = Nem2SdkSwift/core/crypto/RHash
+	url = https://github.com/rhash/RHash.git
+[submodule "Nem2SdkSwift/core/crypto/ed25519"]
+	path = Nem2SdkSwift/core/crypto/ed25519
+	url = https://github.com/orlp/ed25519.git

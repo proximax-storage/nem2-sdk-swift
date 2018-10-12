@@ -1,0 +1,17 @@
+# minimum access control level [private | fileprivate | internal | public | open]
+min_acl: public
+ 
+# clean output folder before generating
+clean: true
+ 
+# output folder
+output: docs
+ 
+# author
+author: ProximaX Limited
+ 
+# module name
+module: Nem2SdkSwift
+ 
+# arguments passing to xcodebuild
+# xcodebuild_arguments: [-workspace,JazzySample.xcworkspace,-scheme,JazzySample]

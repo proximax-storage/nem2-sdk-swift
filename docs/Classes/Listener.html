@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Listener Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Listener" class="dashAnchor"></a>
+    <a title="Listener Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Nem2SdkSwift Docs</a> (99% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Nem2SdkSwift Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Listener Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Account.html">Account</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AccountHttp.html">AccountHttp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AggregateTransaction.html">AggregateTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BlockchainHttp.html">BlockchainHttp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CosignatureTransaction.html">CosignatureTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Deadline.html">Deadline</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Hashes.html">Hashes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HexEncoder.html">HexEncoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KeyPair.html">KeyPair</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Listener.html">Listener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LockFundsTransaction.html">LockFundsTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Message.html">Message</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ModifyMultisigAccountTransaction.html">ModifyMultisigAccountTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MosaicDefinitionTransaction.html">MosaicDefinitionTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MosaicHttp.html">MosaicHttp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MosaicSupplyChangeTransaction.html">MosaicSupplyChangeTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NamespaceHttp.html">NamespaceHttp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NetworkHttp.html">NetworkHttp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PlainMessage.html">PlainMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RegisterNamespaceTransaction.html">RegisterNamespaceTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecretLockTransaction.html">SecretLockTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecretProofTransaction.html">SecretProofTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Transaction.html">Transaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransactionHttp.html">TransactionHttp</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TransferTransaction.html">TransferTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/XEM.html">XEM</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/HashType.html">HashType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MosaicSupplyType.html">MosaicSupplyType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MultisigCosignatoryModificationType.html">MultisigCosignatoryModificationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NamespaceType.html">NamespaceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Nem2SdkSwiftError.html">Nem2SdkSwiftError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NetworkType.html">NetworkType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransactionType.html">TransactionType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AccountRepository.html">AccountRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BlockchainRepository.html">BlockchainRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MosaicRepository.html">MosaicRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NamespaceRepository.html">NamespaceRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NetworkRepository.html">NetworkRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TransactionRepository.html">TransactionRepository</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AccountInfo.html">AccountInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Address.html">Address</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AggregateTransactionCosignature.html">AggregateTransactionCosignature</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BlockInfo.html">BlockInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BlockchainScore.html">BlockchainScore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BlockchainStorageInfo.html">BlockchainStorageInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CosignatureSignedTransaction.html">CosignatureSignedTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:12Nem2SdkSwift24ListenerSubscribeMessageV">ListenerSubscribeMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Mosaic.html">Mosaic</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MosaicId.html">MosaicId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MosaicInfo.html">MosaicInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MosaicName.html">MosaicName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MosaicProperties.html">MosaicProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MultisigAccountGraphInfo.html">MultisigAccountGraphInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MultisigAccountInfo.html">MultisigAccountInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MultisigCosignatoryModification.html">MultisigCosignatoryModification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NamespaceId.html">NamespaceId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NamespaceInfo.html">NamespaceInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NamespaceName.html">NamespaceName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PrivateKey.html">PrivateKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PublicAccount.html">PublicAccount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PublicKey.html">PublicKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SignedTransaction.html">SignedTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransactionAnnounceResponse.html">TransactionAnnounceResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransactionInfo.html">TransactionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransactionStatus.html">TransactionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransactionStatusError.html">TransactionStatusError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Listener</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Listener</span></code></pre>
+
+                </div>
+              </div>
+            <p>WebSocket Listener</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Methods"></a>
+                <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
+                <a href="#/Methods">
+                  <h3 class="section-name">Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift8ListenerC3urlAC10Foundation3URLV_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(url:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift8ListenerC3urlAC10Foundation3URLV_tcfc">init(url:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates WebSocket Listener.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Host url.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift8ListenerC4open02RxC017PrimitiveSequenceVyAE16CompletableTraitOs5NeverOGyF"></a>
+                    <a name="//apple_ref/swift/Method/open()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift8ListenerC4open02RxC017PrimitiveSequenceVyAE16CompletableTraitOs5NeverOGyF">open()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Opens WebSocket connection.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">open</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Completable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Completable that resolves when the WebSocket connection is opened</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift8ListenerC5closeyyF"></a>
+                    <a name="//apple_ref/swift/Method/close()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift8ListenerC5closeyyF">close()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Close webSocket connection</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">close</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift8ListenerC8newBlock02RxC010ObservableCyAA0F4InfoVGyF"></a>
+                    <a name="//apple_ref/swift/Method/newBlock()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift8ListenerC8newBlock02RxC010ObservableCyAA0F4InfoVGyF">newBlock()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an observable stream of BlockInfo.
+ Each time a new Block is added into the blockchain,
+ it emits a new BlockInfo in the event stream.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">newBlock</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/BlockInfo.html">BlockInfo</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Observable stream of BlockInfo</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift8ListenerC9confirmed7address02RxC010ObservableCyAA11TransactionCGAA7AddressV_tF"></a>
+                    <a name="//apple_ref/swift/Method/confirmed(address:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift8ListenerC9confirmed7address02RxC010ObservableCyAA11TransactionCGAA7AddressV_tF">confirmed(address:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an observable stream of Transaction for a specific address.
+ Each time a transaction is in confirmed state an it involves the address,
+ it emits a new Transaction in the event stream.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">confirmed</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/Transaction.html">Transaction</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>address</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Address we listen when a transaction is in confirmed state</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Observable stream of Transaction with state confirmed</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift8ListenerC16unconfirmedAdded7address02RxC010ObservableCyAA11TransactionCGAA7AddressV_tF"></a>
+                    <a name="//apple_ref/swift/Method/unconfirmedAdded(address:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift8ListenerC16unconfirmedAdded7address02RxC010ObservableCyAA11TransactionCGAA7AddressV_tF">unconfirmedAdded(address:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an observable stream of Transaction for a specific address.
+ Each time a transaction is in unconfirmed state an it involves the address,
+ it emits a new Transaction in the event stream.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">unconfirmedAdded</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/Transaction.html">Transaction</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>address</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Address we listen when a transaction is in unconfirmed state</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Observable stream of Transaction with state unconfirmed</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift8ListenerC18unconfirmedRemoved7address02RxC010ObservableCySays5UInt8VGGAA7AddressV_tF"></a>
+                    <a name="//apple_ref/swift/Method/unconfirmedRemoved(address:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift8ListenerC18unconfirmedRemoved7address02RxC010ObservableCySays5UInt8VGGAA7AddressV_tF">unconfirmedRemoved(address:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an observable stream of Transaction Hashes for specific address.
+ Each time a transaction with state unconfirmed changes its state,
+ it emits a new message with the transaction hash in the event stream.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">unconfirmedRemoved</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">UInt8</span><span class="p">]</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>address</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Address we listen when a transaction is removed from unconfirmed state</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Observable stream of Strings with the transaction hash</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift8ListenerC20aggregateBondedAdded7address02RxC010ObservableCyAA20AggregateTransactionCGAA7AddressV_tF"></a>
+                    <a name="//apple_ref/swift/Method/aggregateBondedAdded(address:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift8ListenerC20aggregateBondedAdded7address02RxC010ObservableCyAA20AggregateTransactionCGAA7AddressV_tF">aggregateBondedAdded(address:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return an observable of AggregateTransaction for specific address.
+ Each time an aggregate bonded transaction is announced,
+ it emits a new AggregateTransaction in the event stream.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">aggregateBondedAdded</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/AggregateTransaction.html">AggregateTransaction</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>address</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>address we listen when a transaction with missing signatures state</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Observable stream of AggregateTransaction with missing signatures state</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift8ListenerC22aggregateBondedRemoved7address02RxC010ObservableCySays5UInt8VGGAA7AddressV_tF"></a>
+                    <a name="//apple_ref/swift/Method/aggregateBondedRemoved(address:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift8ListenerC22aggregateBondedRemoved7address02RxC010ObservableCySays5UInt8VGGAA7AddressV_tF">aggregateBondedRemoved(address:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an observable stream of Transaction Hashes for specific address.
+ Each time an aggregate bonded transaction is announced,
+ it emits a new message with the transaction hash in the event stream.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">aggregateBondedRemoved</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">UInt8</span><span class="p">]</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>address</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Address we listen when a transaction is confirmed or rejected</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Observable stream of Strings with the transaction hash</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift8ListenerC6status7address02RxC010ObservableCyAA22TransactionStatusErrorVGAA7AddressV_tF"></a>
+                    <a name="//apple_ref/swift/Method/status(address:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift8ListenerC6status7address02RxC010ObservableCyAA22TransactionStatusErrorVGAA7AddressV_tF">status(address:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an observable stream of {@link TransactionStatusError} for specific address.
+ Each time a transaction contains an error,
+ it emits a new message with the transaction status error in the event stream.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">status</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/TransactionStatusError.html">TransactionStatusError</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>address</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Address we listen to be notified when some error happened</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Observable stream of TransactionStatusError</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift8ListenerC16cosignatureAdded7address02RxC010ObservableCyAA28CosignatureSignedTransactionVGAA7AddressV_tF"></a>
+                    <a name="//apple_ref/swift/Method/cosignatureAdded(address:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift8ListenerC16cosignatureAdded7address02RxC010ObservableCyAA28CosignatureSignedTransactionVGAA7AddressV_tF">cosignatureAdded(address:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an observable stream of CosignatureSignedTransaction for specific address.
+ Each time a cosigner signs a transaction the address initialized,
+ it emits a new message with the cosignatory signed transaction in the even stream.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">cosignatureAdded</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CosignatureSignedTransaction.html">CosignatureSignedTransaction</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>address</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Address we listen when a cosignatory is added to some transaction address sent</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Observable stream of CosignatureSignedTransaction</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12Nem2SdkSwift8ListenerC5error02RxC010ObservableCys5Error_pGyF"></a>
+                    <a name="//apple_ref/swift/Method/error()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12Nem2SdkSwift8ListenerC5error02RxC010ObservableCys5Error_pGyF">error()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an observable stream of Error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">error</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt">Error</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Observable stream of Error.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">ProximaX Limited</a>. All rights reserved. (Last updated: 2018-10-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
