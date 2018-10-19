@@ -19,7 +19,7 @@ public class PlainMessage: Message {
      */
     public init(text: String) {
         self.text = text
-        super.init(type: 0, payload: Array(text.utf8))
+        super.init(type: .plain, payload: Array(text.utf8))
     }
 
     /**
@@ -29,7 +29,7 @@ public class PlainMessage: Message {
      */
     init(payload: [UInt8]) {
         self.text = String(bytes: payload, encoding: .utf8)
-        super.init(type: 0, payload: payload)
+        super.init(type: .plain, payload: payload)
     }
 }
 
