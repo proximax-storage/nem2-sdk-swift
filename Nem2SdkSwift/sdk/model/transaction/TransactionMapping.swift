@@ -160,9 +160,13 @@ class TransactionMapping {
 
         let message: Message?
         if let messageJson = try? transaction.getDictionary("message") {
+            let messageType: MessageType = try messageJson.getEnum("type")
             let payload = try HexEncoder.toBytes(try messageJson.getString("payload"))
-            // TODO: Encrypted message
-            message = PlainMessage(payload: payload)
+
+            switch messageType {
+            case .plain: message = PlainMessage(payload: payload)
+            case .secure: message = SecureMessage(encodedPayload: payload)
+            }
         } else {
             message = nil
         }

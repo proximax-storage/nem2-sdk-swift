@@ -16,8 +16,11 @@ class E2ETest: XCTestCase {
     private let cosignatoryAccount1 = try! Account(privateKeyHexString: TestSettings.cosignatory1PrivateKey, networkType: .mijinTest)
     private let cosignatoryAccount2 = try! Account(privateKeyHexString: TestSettings.cosignatory2PrivateKey, networkType: .mijinTest)
 
+    // nem2-cli transaction namespace -r -n "test-root-namespace" -d 1000
     private let namespaceId = try! NamespaceId(fullName: "test-root-namespace") // This namespace is created in functional testing
     private let namespaceName = "test-root-namespace"
+
+    // nem2-cli transaction mosaic -m "test-mosaic" -n "test-root-namespace" -a 1000000 -t -s -l -d 0 -u 1000
     private let mosaicId = try! MosaicId(fullName: "test-root-namespace:test-mosaic") // This mosaic is created in functional testing
     private var listener: Listener!
 
@@ -442,6 +445,50 @@ class E2ETest: XCTestCase {
 
         announceAndValidateTransaction(secretProofTransactionSigned, account.address)
     }
+
+    func testEncryptAndDecryptMessage() {
+        let transferTransaction = TransferTransaction.create(
+                recipient: cosignatoryAccount1.address,
+                mosaics: [XEM.of(microXemAmount: 1)],
+                message: try! SecureMessage(
+                        decodedPayload: Array("message".utf8),
+                        privateKey: account.keyPair.privateKey,
+                        publicKey: cosignatoryAccount1.keyPair.publicKey),
+                networkType: .mijinTest
+        )
+
+        let signedTransaction = account.sign(transaction: transferTransaction)
+
+        let confirmedObservable = listener.confirmed(address: account.address)
+
+        _ = try! transactionHttp.announce(signedTransaction: signedTransaction).toBlocking().first()!
+
+        let transaction = try! confirmedObservable.toBlocking().first()!
+
+        XCTAssertEqual(signedTransaction.hash, transaction.transactionInfo!.hash!)
+
+        guard let transfer = transaction as? TransferTransaction else {
+            XCTFail("Transaction is not transfer")
+            return
+        }
+
+        guard let message = transfer.message else {
+            XCTFail("Transaction does not have message.")
+            return
+        }
+
+        guard let secureMessage = transfer.message as? SecureMessage else {
+            XCTFail("Transaction does not have message.")
+            return
+        }
+        XCTAssertEqual(MessageType.secure, message.type)
+        XCTAssertEqual("message", String(
+                bytes: try! secureMessage.getDecodedPayload(
+                        privateKey: cosignatoryAccount1.keyPair.privateKey,
+                        publicKey: account.keyPair.publicKey),
+                encoding: .utf8))
+    }
+
 
     func announceAndValidateTransaction(_ signedTransaction: SignedTransaction, _ address: Address) {
         let confirmedObservable = listener.confirmed(address: address)

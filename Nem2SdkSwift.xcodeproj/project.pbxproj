@@ -95,6 +95,7 @@
 		6905731A7A6BC6972598E8C2 /* MosaicId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69057FABD7E8E143066FF306 /* MosaicId.swift */; };
 		69057344AE8173DE1D4AB319 /* NamespaceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69057BBF6248EC257FF89A81 /* NamespaceRepository.swift */; };
 		6905736C1D5AD18B8443461F /* Decimal+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690577DDD4A8A7D4C0C28BFF /* Decimal+Extension.swift */; };
+		690574123B07C8045C3BCD46 /* SecureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690576DA0364BB973840E73D /* SecureMessage.swift */; };
 		6905741E1CDBEF0B9E6111B4 /* SignedTransactionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69057C90F97EEFD8C3366587 /* SignedTransactionTest.swift */; };
 		6905743441495CA4AA95419B /* TransactionStatusError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69057A77D2C9D991A73D1E03 /* TransactionStatusError.swift */; };
 		6905744C5E59424E1B8E30C5 /* Hashes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69057B986E9819C1F7A1D9EC /* Hashes.swift */; };
@@ -102,6 +103,7 @@
 		6905746FE8393463A2CC1401 /* AccountHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69057403EDCE2B19C886B9AE /* AccountHttp.swift */; };
 		690574853CB166EF4A274535 /* BlockchainHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690574D86759166EEF643ACB /* BlockchainHttp.swift */; };
 		690574BC29D8CE86112D79CC /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6905727D398B6D62B9C61123 /* PrivateKey.swift */; };
+		690574F4738488EE76B39784 /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6905798FB2623331B71963AB /* MessageType.swift */; };
 		69057501D968DE546B20BCFC /* CosignatureTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69057C8FF4584C4E8042158C /* CosignatureTransaction.swift */; };
 		6905751D70865C6A49F707F7 /* MosaicSupplyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690577C24D98A72C4CB7DF9C /* MosaicSupplyType.swift */; };
 		6905752B85432CD893B0D8B3 /* byte_order.c in Sources */ = {isa = PBXBuildFile; fileRef = 6905747BED623BABFD230DF2 /* byte_order.c */; };
@@ -188,6 +190,7 @@
 		69057CB77D0053A4FD639A7F /* NamespaceNameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690575526BC6A27D1D607A09 /* NamespaceNameTest.swift */; };
 		69057CCCF623E80286DB26D9 /* MosaicName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69057227F40DF62DB4A43BB1 /* MosaicName.swift */; };
 		69057CDF383F3B7847470D13 /* RegisterNamespaceTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6905763C5412EC92747DF5FA /* RegisterNamespaceTransaction.swift */; };
+		69057CE85A11889F49CF1584 /* SecureMessageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69057C8F91360AA84BE1B408 /* SecureMessageTest.swift */; };
 		69057CF0A56ECAFB37A4D3AE /* AccountRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69057769EED737D20D4A27CF /* AccountRepository.swift */; };
 		69057D0F2E49B31CC09595B0 /* ed25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 6905736F848C7AA310EB90A2 /* ed25519.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		69057D1CFD6F2D5D44DFE8AF /* Numeric+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690570E4D59A5A2086AFAD50 /* Numeric+Extension.swift */; };
@@ -361,6 +364,7 @@
 		690576B9A11D8064952EBE39 /* ListenerChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListenerChannel.swift; sourceTree = "<group>"; };
 		690576C66F7344706C982A81 /* sha512.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sha512.c; path = src/sha512.c; sourceTree = "<group>"; };
 		690576C9F957129A821B12C7 /* TransactionStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionStatus.swift; sourceTree = "<group>"; };
+		690576DA0364BB973840E73D /* SecureMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureMessage.swift; sourceTree = "<group>"; };
 		690576F415BDCEE642C47005 /* MosaicInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MosaicInfo.swift; sourceTree = "<group>"; };
 		69057704C467557E62EEB68E /* TransactionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionType.swift; sourceTree = "<group>"; };
 		69057769EED737D20D4A27CF /* AccountRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountRepository.swift; sourceTree = "<group>"; };
@@ -388,6 +392,7 @@
 		6905794CBDD98953113DB2C1 /* AddressTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressTest.swift; sourceTree = "<group>"; };
 		690579680D4BBA9D6D539EE3 /* MosaicSupplyChangeTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MosaicSupplyChangeTransaction.swift; sourceTree = "<group>"; };
 		6905798BCB6BF7D7B8EE5382 /* SecretLockTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretLockTransaction.swift; sourceTree = "<group>"; };
+		6905798FB2623331B71963AB /* MessageType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageType.swift; sourceTree = "<group>"; };
 		690579AB7AB64C884EE5C970 /* NamespaceName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamespaceName.swift; sourceTree = "<group>"; };
 		690579BB951D521F5A6001BD /* MultisigAccountInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultisigAccountInfo.swift; sourceTree = "<group>"; };
 		690579C22CC886582EC79684 /* MosaicPropertiesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MosaicPropertiesTest.swift; sourceTree = "<group>"; };
@@ -417,6 +422,7 @@
 		69057C4294CA4B0D25F48620 /* ParameterizedTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterizedTest.swift; sourceTree = "<group>"; };
 		69057C4E59A05C27DEF1B5BA /* HashType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashType.swift; sourceTree = "<group>"; };
 		69057C5C79CEBF378E572E36 /* TransactionTypeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTypeTest.swift; sourceTree = "<group>"; };
+		69057C8F91360AA84BE1B408 /* SecureMessageTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureMessageTest.swift; sourceTree = "<group>"; };
 		69057C8FF4584C4E8042158C /* CosignatureTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CosignatureTransaction.swift; sourceTree = "<group>"; };
 		69057C90F97EEFD8C3366587 /* SignedTransactionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignedTransactionTest.swift; sourceTree = "<group>"; };
 		69057C96B2D6864C931AA9E6 /* TransferTransactionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferTransactionTest.swift; sourceTree = "<group>"; };
@@ -843,6 +849,8 @@
 				690573498990C169FB7B406B /* TransactionAnnounceResponse.swift */,
 				690576C9F957129A821B12C7 /* TransactionStatus.swift */,
 				69057A77D2C9D991A73D1E03 /* TransactionStatusError.swift */,
+				6905798FB2623331B71963AB /* MessageType.swift */,
+				690576DA0364BB973840E73D /* SecureMessage.swift */,
 			);
 			path = transaction;
 			sourceTree = "<group>";
@@ -904,6 +912,7 @@
 				69057E566AF82EEF8FE20DEB /* SecretLockTransactionTest.swift */,
 				69057174468FF2DD571A303C /* SecretProofTransactionTest.swift */,
 				690576952CF286C600952C7A /* TransactionMappingTest.swift */,
+				69057C8F91360AA84BE1B408 /* SecureMessageTest.swift */,
 			);
 			path = transaction;
 			sourceTree = "<group>";
@@ -1256,6 +1265,8 @@
 				690579BAE0072106A6F98357 /* ListenerSubscribeMessage.swift in Sources */,
 				6905725E13CC6B0645DF993F /* Listener.swift in Sources */,
 				6905743441495CA4AA95419B /* TransactionStatusError.swift in Sources */,
+				690574F4738488EE76B39784 /* MessageType.swift in Sources */,
+				690574123B07C8045C3BCD46 /* SecureMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1320,6 +1331,7 @@
 				69057EC66807922AE0512EEC /* TransactionHttpTest.swift in Sources */,
 				6905727C1C4672097466B0E7 /* ListenerTest.swift in Sources */,
 				690575368C10C935E11C43E3 /* E2ETest.swift in Sources */,
+				69057CE85A11889F49CF1584 /* SecureMessageTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
