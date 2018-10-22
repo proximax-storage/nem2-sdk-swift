@@ -153,4 +153,17 @@ class TestUtils {
         }
     }
 
+    static func expectMessageEncryptionError(message: String? = nil, _ body: () throws -> Void) {
+        XCTAssertThrowsError(try body()) { error in
+            if case Nem2SdkSwiftError.messageEncryptionError(let resultMessage) = error {
+                if message != nil {
+                    XCTAssertEqual(message, resultMessage)
+                }
+            }
+            else {
+                XCTFail("Unexpected Error")
+            }
+        }
+    }
+
 }

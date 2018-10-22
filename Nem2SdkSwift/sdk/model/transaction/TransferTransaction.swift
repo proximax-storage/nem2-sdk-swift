@@ -53,7 +53,7 @@ public class TransferTransaction: Transaction {
         let messageBytes: [UInt8]
         if let message = self.message {
             messageSize = UInt16(message.payload.count + 1)
-            messageBytes = [message.type] + message.payload
+            messageBytes = [message.type.rawValue] + message.payload
         } else {
             messageSize = 0
             messageBytes = []

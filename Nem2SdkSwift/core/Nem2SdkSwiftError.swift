@@ -17,4 +17,6 @@ public enum Nem2SdkSwiftError: Error {
     case parseError(String)
     /// A serialize error
     case serializeError(String)
+    /// A message encryption error
+    case messageEncryptionError(String)
 }

@@ -8,11 +8,11 @@ import Foundation
 public class Message {
     // MARK: Properties
     /// Message type.
-    public let type: UInt8
+    public let type: MessageType
     /// Returns message payload.
     public let payload: [UInt8]
 
-    init(type: UInt8, payload: [UInt8]) {
+    init(type: MessageType, payload: [UInt8]) {
         self.type = type
         self.payload = payload
     }

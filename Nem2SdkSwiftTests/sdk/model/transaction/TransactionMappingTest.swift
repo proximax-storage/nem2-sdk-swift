@@ -149,7 +149,7 @@ public class TransactionMappingTest: XCTestCase {
 
     func testShouldCreateStandaloneTransferTransaction() {
         let messagePayload = "746573742D6D657373616765"
-        let messageType: UInt8 = 0
+        let messageType = MessageType.plain
         let amount = "[3863990592,95248]"
         let mosaicId = "[3646934825,3576016193]"
         let recipient = "9050B9837EFAB4BBE8A4B9BB32D812F9885C00D8FC1650E142"
@@ -157,7 +157,7 @@ public class TransactionMappingTest: XCTestCase {
         let customFields = """
             "message": {
               "payload": "\(messagePayload)",
-              "type": \(messageType)
+              "type": \(messageType.rawValue)
             },
             "mosaics": [
               {
@@ -181,7 +181,7 @@ public class TransactionMappingTest: XCTestCase {
 
     func testShouldCreateAggregateTransferTransaction()  {
         let messagePayload = "746573742D6D657373616765"
-        let messageType: UInt8 = 0
+        let messageType = MessageType.plain
         let amount = "[3863990592,95248]"
         let mosaicId = "[3646934825,3576016193]"
         let recipient = "9050B9837EFAB4BBE8A4B9BB32D812F9885C00D8FC1650E142"
@@ -189,7 +189,7 @@ public class TransactionMappingTest: XCTestCase {
         let customFields = """
             "message": {
               "payload": "\(messagePayload)",
-              "type": \(messageType)
+              "type": \(messageType.rawValue)
             },
             "mosaics": [
               {
